@@ -1,9 +1,11 @@
 package com.mirager.lambdas;
 
+import java.io.Serializable;
+
 /**
  * Created by MirageR on 2016-10-21.
  */
-public class Flat {
+public class Flat implements Serializable {
     private String city;
     private Integer price;
     private Integer surface;
