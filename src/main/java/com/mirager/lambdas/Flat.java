@@ -10,6 +10,15 @@ public class Flat implements Serializable {
     private Integer price;
     private Integer surface;
     private String street;
+    private Integer noOfRooms;
+
+    public Integer getNoOfRooms() {
+        return noOfRooms;
+    }
+
+    public void setNoOfRooms(Integer noOfRooms) {
+        this.noOfRooms = noOfRooms;
+    }
 
     public String getCity() {
         return city;
@@ -43,11 +52,12 @@ public class Flat implements Serializable {
         this.street = street;
     }
 
-    public Flat(String city, Integer price, Integer surface, String street) {
+    public Flat(String city, Integer price, Integer surface, String street, Integer noOfRooms) {
         this.city = city;
         this.price = price;
         this.surface = surface;
         this.street = street;
+        this.noOfRooms=noOfRooms;
     }
 
     @Override
@@ -57,6 +67,7 @@ public class Flat implements Serializable {
                 ", price=" + price +
                 ", surface=" + surface +
                 ", street='" + street + '\'' +
+                ", noOfRooms=" + noOfRooms +
                 '}';
     }
 }
